@@ -1,0 +1,12 @@
+#left h2, h5{
+	text-align: left;
+}
+
+p{
+	text-align: justify;
+}
+
+.btn-small {
+	margin: 0 5px 10px 0;
+	float: inherit;
+}
