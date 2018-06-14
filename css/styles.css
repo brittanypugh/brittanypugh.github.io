@@ -3,7 +3,7 @@ body{
     transition: opacity 5s;
     -webkit-transition: opacity 2s; /*Chrome, Safari*/
        -moz-transition: opacity 2s; /*Mozilla Firefox*/ 
-        -ms-transition: opacity 2s; /*Microsoft Internet Explorer*/
+        -ms-transition: opacity 2s; /*Microsoft Internet Explorer, Microsoft Edge*/
          -o-transition: opacity 2s; /*Opera*/
             transition: opacity 2s;
 }
@@ -11,6 +11,10 @@ body{
 h1, h2, h3, h4, h5, p {
 	color: darkolivegreen;
 	font-family: 'Song Myung', serif;
+}
+
+p{
+	font-size: large;
 }
 
 #left h2, h5 {
