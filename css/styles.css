@@ -1,7 +1,11 @@
 body{ 
     opacity: 0;
     transition: opacity 5s;
-    -webkit-transition: opacity 2s; /* Safari */
+    -webkit-transition: opacity 2s; /*Chrome, Safari*/
+       -moz-transition: opacity 2s; /*Mozilla Firefox*/ 
+        -ms-transition: opacity 2s; /*Microsoft Internet Explorer*/
+         -o-transition: opacity 2s; /*Opera*/
+            transition: opacity 2s;
 }
 
 h1, h2, h3, h4, h5, p {
@@ -13,14 +17,7 @@ h1, h2, h3, h4, h5, p {
 	text-align: left;
 }
 
-#name {
-	/*	font-family: 'Lobster', cursive;*/
-	/*	font-size: 100px;*/
-	/*	text-align: center;*/
-}
-
 .fact {
-	/*	font-family: 'Lora', serif;*/
 	font-family: 'Lobster', cursive;
 }
 
