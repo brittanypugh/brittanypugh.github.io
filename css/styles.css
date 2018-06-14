@@ -1,3 +1,9 @@
+body{ 
+    opacity: 0;
+    transition: opacity 5s;
+    -webkit-transition: opacity 2s; /* Safari */
+}
+
 h1, h2, h3, h4, h5, p {
 	color: darkolivegreen;
 	font-family: 'Song Myung', serif;
@@ -31,4 +37,5 @@ a:hover {
 .btn-small {
 	margin: 0 5px 10px 0;
 	float: inherit;
+	font-weight: 500;
 }
