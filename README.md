@@ -1,6 +1,6 @@
 # Portfolio Website by Brittany Pugh
 ## Description
-My website has a brief summary about my skills and work experience. The website also directs users to my email, resume and LinkedIn profile.
+My website has a brief summary about my skills and work experience. The website also directs users to my email, GitHub profile and LinkedIn profile.
 ## Motivation
 I created the website to introduce myself to other web developers and web users.
 ## Design
