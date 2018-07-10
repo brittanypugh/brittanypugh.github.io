@@ -24,29 +24,37 @@
 </head>
 
 <body>
-	<div class="row">
-		<div class="col s10 offset-s1">
+	<div class="container">
+			
+			<!-- Header -->
 			<div id="header">
 				<h3>My Shopping List</h3><br>
 			</div>
 			
+			<!-- Form -->
 			<form class="list-content">
+				
 				<div class="row">
-					<div class="input-field col s8">
+					<div class="input-field col s12 m9 l8">
 						<!-- input -->
 						<input placeholder="Ex:1 dozen eggs" id="item-input" type="text" class="validate">
 						<label class="active" for="first_name">Grocery Item</label>
 					</div>
+					
+					<div class="col s6 m3 l3">
+					<!-- add item button -->
 					<button class="btn-large waves-effect waves-light" id="add-item" type="submit" name="action">Add Item</button>
+					</div>
 				</div>
 				
-				<div class="col s8">
-					<ul class="collection shopping-list">
-					</ul>
+				<div class="row">
+					<!-- shopping list -->
+					<div class="col s12 m9 l8">
+						<ul class="collection shopping-list"></ul>
+					</div>
 				</div>
-				
 			</form>
-		</div>
+			
 	</div>
 </body>
 
