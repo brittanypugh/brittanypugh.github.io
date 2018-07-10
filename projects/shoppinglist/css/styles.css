@@ -1,0 +1,16 @@
+body{
+	font-family: 'Song Myung', serif;
+}
+
+button{
+	font-family: 'Song Myung', serif;
+	font-weight: 500;
+}
+
+.item-text{
+	text-transform: uppercase;
+}
+
+.item-remove{
+	color: teal;
+}
