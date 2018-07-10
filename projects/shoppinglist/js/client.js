@@ -17,11 +17,11 @@ $('#add-item').on('click', function(event) {
 		console.log("item count is: "+itemCount);
 		if(itemCount == 0){ //no items in the list
 			$('.shopping-list').append(itemHtml); // Add the item to the shopping list
-			$('.shopping-list').append("<li class='collection-item active'>Total Items<span class='new badge' data-badge-caption='Grocery Item'>1</span></li>"); // Add counter
+			$('.shopping-list').append("<li class='collection-item active counter'>Total Items<span class='new badge' data-badge-caption='Grocery Item'>1</span></li>"); // Add counter
 		}else{
 			$('.shopping-list li:last-child').remove(); // Remove counter
 			$('.shopping-list').append(itemHtml); // Add the item to the shopping list
-			$('.shopping-list').append("<li class='collection-item active'>Total Items<span class='new badge' data-badge-caption='Grocery Items'>" + itemCount + "</span></li>"); // Add counter with updated item count
+			$('.shopping-list').append("<li class='collection-item active counter'>Total Items<span class='new badge' data-badge-caption='Grocery Items'>" + itemCount + "</span></li>"); // Add counter with updated item count
 		}
 		
 		// Clear the text entered by the user
@@ -37,9 +37,9 @@ $('.shopping-list').on('click', '.item-remove', function(event){
 	var itemCount = $('.shopping-list li').length - 1;
 	$('.shopping-list li:last-child').remove(); // Remove counter
 	if(itemCount == 1){
-		$('.shopping-list').append("<li class='collection-item active'>Total Items<span class='new badge' data-badge-caption='Grocery Item'>1</span></li>"); // Add counter
+		$('.shopping-list').append("<li class='collection-item active counter'>Total Items<span class='new badge' data-badge-caption='Grocery Item'>1</span></li>"); // Add counter
 	}else{
-		$('.shopping-list').append("<li class='collection-item active'>Total Items<span class='new badge' data-badge-caption='Grocery Items'>" + itemCount + "</span></li>"); // Add counter with updated item count
+		$('.shopping-list').append("<li class='collection-item active counter'>Total Items<span class='new badge' data-badge-caption='Grocery Items'>" + itemCount + "</span></li>"); // Add counter with updated item count
 	}
 	
 });
