@@ -7,10 +7,27 @@ button{
 	font-weight: 500;
 }
 
+label[for=new_item]{
+	font-size: 20px;
+}
+
 .item-text{
 	text-transform: uppercase;
+	font-size: 20px;
+}
+
+.item-check{
+	color: teal;
+	float: left;
+	width: 50px;
+	height: 35px;
+	cursor: pointer;
 }
 
 .item-remove{
 	color: teal;
+	float: right;
+	width: 20px;
+	height: 35px;
+	cursor: pointer;
 }
