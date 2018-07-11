@@ -29,15 +29,11 @@ $('#add-item').on('click', function(event) {
 	
 //Executed when user clicks the "X" on an added item
 $('.shopping-list').on('click', '.item-remove', function(event){
+	
 	$(event.currentTarget).parent().remove(); // Remove selected item
 	$('.shopping-list li:last-child').remove(); // Remove counter
 	var itemCount = $('.shopping-list li').length; //Get number of items
-	
-	if(itemCount == 1){
-		$('.shopping-list').append("<li class='collection-item active counter'>Total Items<span class='badge'>1</span></li>"); // Add counter
-	}else{
-		$('.shopping-list').append("<li class='collection-item active counter'>Total Items<span class='badge'>" + itemCount + "</span></li>"); // Add counter with updated item count
-	}
+	$('.shopping-list').append("<li class='collection-item active counter'>Total Items<span class='badge'>" + itemCount + "</span></li>"); // Add counter with updated item count
 	
 });
 	
