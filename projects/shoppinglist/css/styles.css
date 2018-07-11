@@ -1,5 +1,11 @@
-body{
+html, body{
 	font-family: 'Song Myung', serif;
+	font-size: 16px;
+}
+
+h3{
+	font-size: 2.5em;
+	
 }
 
 button{
@@ -8,37 +14,38 @@ button{
 }
 
 label[for=new_item]{
-	font-size: 20px;
+	font-size: 3em;
 }
 
 .item-text{
 	text-transform: uppercase;
-	font-size: 20px;
-	margin-left: 5px;
-	margin-right: 5px;
+	font-size: 1em;
+	margin-left: 0.2em;
+	margin-right: 0.2em;
 }
 
 .item-check{
 	color: #26A69A; /*Teal*/
 	float: left;
-	margin-right: 5px;
+	margin-right: 0.2em;
 	cursor: pointer;
 }
 
 .item-remove{
 	color: #26A69A; /*Teal*/
 	float: right;
-	margin-left: 5px;
+	margin-left: 0.2em;
 	cursor: pointer;
 }
 
 .counter{
 	text-transform: uppercase;
-	font-size: 20px;
+	font-size: 1em;
 }
 
 span.badge{
 	color: #FFF; /*White*/
-	font-size: 20px;
-	font-weight: 500;
+	font-size: 1.25em;
+	font-weight: 600;
+	margin-left: 0.1em;
 }
