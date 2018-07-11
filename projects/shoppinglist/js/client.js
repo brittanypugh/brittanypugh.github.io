@@ -22,9 +22,8 @@ $('#add-item').on('click', function(event) {
 		$('.shopping-list').append(counterHtml); // Add counter with updated item count
 		$('#item-input').val(''); // Clear the text entered by the user
 		
-	}else{ //Add warning
-		
 	}
+	
 });
 	
 //Executed when user clicks the "X" on an added item
