@@ -1,7 +1,7 @@
 
 $(document).ready(function(){
 	
-counterHtml = "<li class='collection-item active counter'>Total Items<span class='badge'>0</span></li>";
+counterHtml = "<li class='collection-item teal active counter'>Total Items<span class='badge'>0</span></li>";
 $('.shopping-list').append(counterHtml); // Add counter
 	
 // Executed when user clicks "Add Item" button
@@ -15,7 +15,7 @@ $('#add-item').on('click', function(event) {
 	if($.trim(listItem).length){ //If field is not empty
 		
 		itemHtml = "<li class='collection-item'><i class='material-icons item-check'>check_box_outline_blank</i><span class='item-text'>" + listItem + "</span><i class='material-icons item-remove'>clear</i></li>"; // Build list item html with checkbox and clear option
-		counterHtml = "<li class='collection-item active counter'>Total Items<span class='badge'>" + itemCount + "</span></li>"; // Build counter
+		counterHtml = "<li class='collection-item teal active counter'>Total Items<span class='badge'>" + itemCount + "</span></li>"; // Build counter
 		
 		$('.shopping-list li:last-child').remove(); // Remove counter
 		$('.shopping-list').append(itemHtml); // Add the item to the shopping list
@@ -32,7 +32,8 @@ $('.shopping-list').on('click', '.item-remove', function(event){
 	$(event.currentTarget).parent().remove(); // Remove selected item
 	$('.shopping-list li:last-child').remove(); // Remove counter
 	var itemCount = $('.shopping-list li').length; //Get number of items
-	$('.shopping-list').append("<li class='collection-item active counter'>Total Items<span class='badge'>" + itemCount + "</span></li>"); // Add counter with updated item count
+	var counterHtml ="<li class='collection-item teal active counter'>Total Items<span class='badge'>" + itemCount + "</span></li>";
+	$('.shopping-list').append(counterHtml); // Add counter with updated item count
 	
 });
 	
