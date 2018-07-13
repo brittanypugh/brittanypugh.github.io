@@ -1,4 +1,4 @@
-body{ 
+body { 
     opacity: 0;
     transition: opacity 5s;
     -webkit-transition: opacity 2s; /*Chrome, Safari*/
@@ -6,48 +6,87 @@ body{
         -ms-transition: opacity 2s; /*Microsoft Internet Explorer, Microsoft Edge*/
          -o-transition: opacity 2s; /*Opera*/
             transition: opacity 2s;
+	
+	font-family: 'Raleway', serif;
+	font-size: 12px;
+	background-color: #FFCF9E; /*butterscotch*/
 }
 
-h1, h2, h3, h4, h5, p {
-	color: #4D5F2B;
-	font-family: 'Song Myung', serif;
+h1 {
+	font-size: 4.25rem;
 }
 
-p{
-	font-size: large;
+h2 {
+	font-size: 2.5rem;
 }
 
-#left h2, h5 {
-	text-align: left;
+h3 {
+	font-size: 2rem;
+}
+
+#name {
+	font-family: 'Abril Fatface', serif;
+	color: #E87826; /*orange*/
+}
+
+.intro {
+	font-family: Lora;
+	font-size: 1.75rem;
+	font-weight: 500;
+	color: #096295; /*dark blue*/
 }
 
 .fact {
-	font-family: Lobster, fantasy;
+	font-family: 'Lora', serif;
+	font-weight: 700;
+	color: #E87826; /*orange*/
+}
+
+.factTitle {
+	color: #096295; /*dark blue*/
+}
+
+.divider {
+	height: 0.1rem;
+	background-color: #E88D5A; /*light brown*/
 }
 
 p {
 	text-align: justify;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
 }
 
-/* mouse over link */
-a:hover {
-	/*    color: hotpink;*/
+a { /*link*/
+	color: #096295; /*dark blue*/
+}
+
+a:hover { /*mouse over link*/
+	color: #129DF1; /*light blue*/
 	text-decoration: underline;
 }
 
-.btn-small {
+.btn {
 	margin: 0 5px 10px 0;
-	float: inherit;
+	font-size: 1.1rem;
 	font-weight: 500;
+	color: #FFF; /*white*/
+	background-color: #096295; /*dark blue*/
+}
+
+.btn:hover { /*mouse over button*/
+	color: #FFF; /*white*/
+	background-color: #129DF1; /*light blue*/
+	text-decoration: none;
 }
 
 .card .card-title{
-	font-size: 32px;
+	font-size: 2rem;
 	font-weight: 600;
 }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
 	color:palegoldenrod;
 	font-weight: 700;
-	font-size: 16px;
+	font-size: 1rem;
 }
