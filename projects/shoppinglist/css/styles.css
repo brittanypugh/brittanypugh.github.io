@@ -1,51 +1,59 @@
 html, body{
 	font-family: 'Song Myung', serif;
 	font-size: 16px;
+	padding: 0;
+	margin: 0;
 }
 
-h3{
-	font-size: 2.5em;
-	
+#title{
+	font-size: 3rem;
+	padding: 1rem;
+	margin: 0 0.25rem 0 0.25rem;
 }
 
 button{
 	font-family: 'Song Myung', serif;
 	font-weight: 500;
+	margin-left: 0.25rem;
 }
 
-label[for=new_item]{
-	font-size: 3em;
+label[for=item-input]{
+	font-size: 1.5rem;
+}
+
+.collection{
+	margin: 0.5rem;
 }
 
 .item-text{
 	text-transform: uppercase;
-	font-size: 1em;
-	margin-left: 0.2em;
-	margin-right: 0.2em;
+	font-size: 1rem;
+	margin-left: 0.25rem;
+	margin-right: 0.25rem;
 }
 
 .item-check{
 	color: #26A69A; /*Teal*/
 	float: left;
-	margin-right: 0.2em;
+	margin-right: 0.25rem;
 	cursor: pointer;
 }
 
 .item-remove{
 	color: #26A69A; /*Teal*/
 	float: right;
-	margin-left: 0.2em;
+	margin-right: 0.25rem;
 	cursor: pointer;
 }
 
 .counter{
 	text-transform: uppercase;
-	font-size: 1em;
+	font-size: 1.25rem;
 }
 
 span.badge{
 	color: #FFF; /*White*/
-	font-size: 1.25em;
-	font-weight: 600;
-	margin-left: 0.1em;
+	font-size: 1.5rem;
+	font-weight: 500;
+	padding-left: 1.5rem;
 }
