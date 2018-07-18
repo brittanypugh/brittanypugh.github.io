@@ -1,0 +1,36 @@
+body{
+	font-family: 'Raleway', serif;
+	font-size: 12px;
+	background-color: #FFEBD6; /*manila*/
+}
+
+#pageTitle{
+	font-family: 'Song Myung';
+	font-size: 5rem;
+	color: #8B0000; /*dark red*/
+}
+
+.card .card-content{
+	text-align: justify;
+	font-size: 1.5rem;
+	line-height: 2.5rem;
+}
+
+.card .card-title{
+	font-size: 2.5rem;
+	color: #FFC063; /*light orange*/
+	font-weight: 900;
+	letter-spacing: 0.1rem;
+
+}
+
+.card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
+	font-size: 1.25rem;
+	color: #FED9A0; /*light orange*/
+	font-weight: 600;
+	letter-spacing: 0.1rem;
+}
+
+.card-action:hover{
+	text-decoration: underline;
+}
