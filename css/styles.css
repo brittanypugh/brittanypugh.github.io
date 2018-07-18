@@ -9,46 +9,50 @@ body {
 	
 	font-family: 'Raleway', serif;
 	font-size: 12px;
-	background-color: #FFCF9E; /*butterscotch*/
+	background-color: #FFEBD6; /*manila*/
+	
 }
 
 h1 {
-	font-size: 4.25rem;
+	font-size: 4.5rem;
 }
 
 h2 {
-	font-size: 2.5rem;
+	font-size: 3rem;
 }
 
 h3 {
-	font-size: 2rem;
+	font-size: 2.25rem;
 }
 
 #name {
 	font-family: 'Abril Fatface', serif;
-	color: #E87826; /*orange*/
+	color: #800000; /*dark red*/
 }
 
 .intro {
-	font-family: Lora;
+	font-family: 'Lora', 'PT Serif';
 	font-size: 1.75rem;
 	font-weight: 500;
-	color: #096295; /*dark blue*/
+	color: #0A3F7B; /*dark teal*/
 }
 
 .fact {
-	font-family: 'Lora', serif;
-	font-weight: 700;
-	color: #E87826; /*orange*/
+	font-family: 'Crimson Text', 'PT Serif', serif;
+	font-weight: 500;
+	color: #800000; /*dark red*/
+	margin-bottom: 0.75rem;
 }
 
 .factTitle {
-	color: #096295; /*dark blue*/
+	font-family: 'Crimson Text','PT Serif', serif;
+	color: #0A3F7B; /*dark teal*/
+	margin-top: 0.75rem;
 }
 
 .divider {
 	height: 0.1rem;
-	background-color: #E88D5A; /*light brown*/
+	background-color: #0A3F7B; /*dark teal*/
 }
 
 p {
@@ -58,35 +62,26 @@ p {
 }
 
 a { /*link*/
-	color: #096295; /*dark blue*/
+	color: #800000;
+	font-weight: 600;
 }
 
 a:hover { /*mouse over link*/
-	color: #129DF1; /*light blue*/
+	color: #129DF1;
+	font-weight: 500;
 	text-decoration: underline;
 }
 
-.btn {
+.btn, .btn:visited, .btn:active, .btn:focus{
 	margin: 0 5px 10px 0;
 	font-size: 1.1rem;
 	font-weight: 500;
 	color: #FFF; /*white*/
-	background-color: #096295; /*dark blue*/
+	background-color: #0B488E; /*dark blue*/
 }
 
 .btn:hover { /*mouse over button*/
 	color: #FFF; /*white*/
 	background-color: #129DF1; /*light blue*/
 	text-decoration: none;
-}
-
-.card .card-title{
-	font-size: 2rem;
-	font-weight: 600;
-}
-
-.card .card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
-	color:palegoldenrod;
-	font-weight: 700;
-	font-size: 1rem;
 }
