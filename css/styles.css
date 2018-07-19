@@ -50,8 +50,8 @@ h3 {
 	margin-top: 0.75rem;
 }
 
-.divider {
-	height: 0.1rem;
+hr {
+	height: 0.05rem;
 	background-color: #0A3F7B; /*dark teal*/
 }
 
