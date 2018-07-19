@@ -34,7 +34,7 @@ h3 {
 	font-family: 'Lora', 'PT Serif';
 	font-size: 1.75rem;
 	font-weight: 500;
-	color: #0A3F7B; /*dark teal*/
+	color: #0A3F7B; /*dark blue*/
 }
 
 .fact {
@@ -46,13 +46,13 @@ h3 {
 
 .factTitle {
 	font-family: 'Crimson Text','PT Serif', serif;
-	color: #0A3F7B; /*dark teal*/
+	color: #0A3F7B; /*dark blue*/
 	margin-top: 0.75rem;
 }
 
 hr {
 	height: 0.05rem;
-	background-color: #0A3F7B; /*dark teal*/
+	background-color: #0A3F7B; /*dark blue*/
 }
 
 p {
@@ -62,12 +62,12 @@ p {
 }
 
 a { /*link*/
-	color: #800000;
+	color: #800000; /*dark red*/
 	font-weight: 600;
 }
 
 a:hover { /*mouse over link*/
-	color: #129DF1;
+	color: #129DF1; /*light blue*/
 	font-weight: 500;
 	text-decoration: underline;
 }
