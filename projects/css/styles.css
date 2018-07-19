@@ -4,33 +4,75 @@ body{
 	background-color: #FFEBD6; /*manila*/
 }
 
-#pageTitle{
-	font-family: 'Song Myung';
-	font-size: 5rem;
-	color: #8B0000; /*dark red*/
+h1 {
+	font-size: 4.5rem;
 }
 
-.card .card-content{
+h2 {
+	font-size: 3rem;
+}
+
+h3 {
+	font-size: 1.75rem;
+}
+
+#pageTitle {
+	font-family: 'Abril Fatface', serif;
+	color: #800000; /*dark red*/
+}
+
+#intro {
+/*	font-family: 'Lora', 'PT Serif';*/
+	font-size: 1.5rem;
+/*	font-weight: 500;*/
+	color: #0A3F7B;
+}
+
+.projectName {
+	font-family: 'Crimson Text', 'PT Serif', serif;
+	font-weight: 500;
+	color: #800000; /*dark red*/
+	margin-bottom: 0.75rem;
+}
+
+.projectDesc {
+	font-family: 'Crimson Text','PT Serif', serif;
+	color: #0A3F7B; /*dark teal*/
+	margin-top: 0.75rem;
+}
+
+hr {
+	height: 0.05rem;
+	background-color: #0A3F7B; /*dark teal*/
+}
+
+p {
 	text-align: justify;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
 }
 
-.card .card-title{
-	font-size: 2.5rem;
-	color: #FFC063; /*light orange*/
-	font-weight: 900;
-	letter-spacing: 0.1rem;
-
-}
-
-.card-action a:not(.btn):not(.btn-large):not(.btn-small):not(.btn-large):not(.btn-floating){
-	font-size: 1.25rem;
-	color: #FED9A0; /*light orange*/
+a { /*link*/
+	color: #800000;
 	font-weight: 600;
-	letter-spacing: 0.1rem;
 }
 
-.card-action:hover{
+a:hover { /*mouse over link*/
+	color: #129DF1;
+	font-weight: 500;
 	text-decoration: underline;
+}
+
+.btn, .btn:visited, .btn:active, .btn:focus{
+	margin: 0 5px 10px 0;
+	font-size: 1.1rem;
+	font-weight: 500;
+	color: #FFF; /*white*/
+	background-color: #0B488E; /*dark blue*/
+}
+
+.btn:hover { /*mouse over button*/
+	color: #FFF; /*white*/
+	background-color: #129DF1; /*light blue*/
+	text-decoration: none;
 }
