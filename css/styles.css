@@ -37,14 +37,14 @@ h3 {
 	color: #0A3F7B; /*dark blue*/
 }
 
-.fact {
+.project {
 	font-family: 'Crimson Text', 'PT Serif', serif;
 	font-weight: 500;
 	color: #800000; /*dark red*/
 	margin-bottom: 0.75rem;
 }
 
-.factTitle {
+.projectTitle {
 	font-family: 'Crimson Text','PT Serif', serif;
 	color: #0A3F7B; /*dark blue*/
 	margin-top: 0.75rem;
