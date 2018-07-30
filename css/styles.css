@@ -92,12 +92,21 @@ h3 {
 	color: #0A3F7B; /*dark blue*/
 }
 
+#project{
+	font-family: 'Abril Fatface', 'Crimson Text', 'PT Serif', serif;
+	font-weight: 500;
+/*	font-size: 2.5rem;*/
+	color: #0A3F7B; /*dark blue*/
+	margin: 0;
+}
+
 .projectTitle {
 	font-family: 'Abril Fatface', 'Crimson Text', 'PT Serif', serif;
 	font-weight: 500;
 	font-size: 2.5rem;
 	color: #800000; /*dark red*/
 	margin-bottom: 0.75rem;
+	margin-top: 0.5rem;
 }
 
 div.chip{
