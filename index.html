@@ -12,6 +12,7 @@
 	<!--CSS and Styles-->
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="css/styles.css">
 
 	<!-- Google Fonts -->
@@ -24,13 +25,20 @@
 		<nav> <!-- navigation menu -->
 		<div class="nav-wrapper">
 		  <a href="#" class="brand-logo">BRITTANY PUGH</a>
+			<a href="#" data-target="mobile-phone" class="sidenav-trigger"><i class="material-icons">menu</i></a>
 		  <ul id="nav-mobile" class="right hide-on-med-and-down">
 			<li><a href="#">ABOUT ME</a></li>
-			<li><a href="#">PROJECTS</a></li>
+			<li><a href="#">MY PROJECTS</a></li>
 			<li><a href="#">CONTACT ME</a></li>
 		  </ul>
 		</div>
 		</nav>
+		
+		<ul class="sidenav" id="mobile-phone">
+			<li><a href="#">ABOUT ME</a></li>
+			<li><a href="#">MY PROJECTS</a></li>
+			<li><a href="#">CONTACT ME</a></li>
+		</ul>
 		
 		<div class="row"> <!--break page into 40/60 split for large&up-sized devices-->
 			
@@ -80,10 +88,18 @@
 
 		</div>
 	</div>
+	
 	<!--JavaScript and JQuery Files-->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- Compiled and minified JavaScript -->
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+	
+	<script>
+		$(document).ready(function(){
+			//activate sidenav with hamburger menu for mobile viewers
+    		$('.sidenav').sidenav();
+  		});
+	</script>
 
 </body>
 
