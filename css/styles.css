@@ -94,7 +94,7 @@ h3 {
 
 #project{
 	font-family: 'Abril Fatface', 'Crimson Text', 'PT Serif', serif;
-	font-weight: 500;
+/*	font-weight: 500;*/
 /*	font-size: 2.5rem;*/
 	color: #0A3F7B; /*dark blue*/
 	margin: 0;
@@ -117,10 +117,10 @@ div.chip{
 	letter-spacing: 0.1rem;
 }
 
-.project {
-	font-family: 'Crimson Text','PT Serif', serif;
+#contact{
+	font-family: 'Abril Fatface', 'Crimson Text', 'PT Serif', serif;
 	color: #0A3F7B; /*dark blue*/
-	margin-top: 0.75rem;
+	margin: 0;
 }
 
 hr {
