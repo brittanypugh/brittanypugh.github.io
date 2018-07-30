@@ -13,6 +13,7 @@ body {
 	
 }
 
+/* Main navbar */
 .nav-wrapper{
 	font-family: 'Raleway', serif;
 	letter-spacing: 0.1rem;
@@ -35,6 +36,7 @@ body {
 	text-decoration: none;
 }
 
+/* Mobile navbar */
 .sidenav li>a {
 	color: #0A3F7B;
 	font-family: 'Raleway','Lora', 'PT Serif', serif;
@@ -44,6 +46,26 @@ body {
 
 .sidenav li>a:hover {
 	color: #800000;
+}
+
+/* Container holding the image and the text */
+.container-img {
+    position: relative;
+
+}
+
+/*Center text over the image*/
+.centered{
+	text-align: center;
+    color: white;
+	font-family: 'Abril Fatface';
+	font-size: 2.5rem;
+	width: 100%;
+	
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 h1 {
