@@ -121,6 +121,7 @@ div.chip{
 	font-family: 'Abril Fatface', 'Crimson Text', 'PT Serif', serif;
 	color: #0A3F7B; /*dark blue*/
 	margin: 0;
+	padding-left: 0.5rem;
 }
 
 
