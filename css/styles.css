@@ -13,6 +13,28 @@ body {
 	
 }
 
+.nav-wrapper{
+	font-family: 'Raleway', serif;
+	letter-spacing: 0.1rem;
+	background-color: #0A3F7B;
+}
+
+.nav-wrapper .brand-logo {
+	width: 20rem;
+	font-family: 'Raleway','Lora', 'PT Serif', serif;
+	text-align: center;
+}
+
+.nav-wrapper a{
+	color: #FFF;
+	margin: 0 1rem;
+}
+
+.nav-wrapper a:hover{
+	margin: 0 1rem;
+	text-decoration: none;
+}
+
 h1 {
 	font-size: 4.5rem;
 }
@@ -31,20 +53,29 @@ h3 {
 }
 
 .intro {
-	font-family: 'Lora', 'PT Serif';
+	font-family: 'Lora', 'PT Serif', serif;
 	font-size: 1.75rem;
 	font-weight: 500;
 	color: #0A3F7B; /*dark blue*/
 }
 
-.project {
-	font-family: 'Crimson Text', 'PT Serif', serif;
+.projectTitle {
+	font-family: 'Abril Fatface', 'Crimson Text', 'PT Serif', serif;
 	font-weight: 500;
+	font-size: 2.5rem;
 	color: #800000; /*dark red*/
 	margin-bottom: 0.75rem;
 }
 
-.projectTitle {
+div.chip{
+	font-weight: 700;
+	margin: 0.25rem 0.1rem;
+	float: right;
+	height: 2rem;
+	letter-spacing: 0.1rem;
+}
+
+.project {
 	font-family: 'Crimson Text','PT Serif', serif;
 	color: #0A3F7B; /*dark blue*/
 	margin-top: 0.75rem;
@@ -60,6 +91,7 @@ p {
 	text-justify: inter-character;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
+	
 }
 
 a { /*link*/
