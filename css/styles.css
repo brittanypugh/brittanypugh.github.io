@@ -80,9 +80,9 @@ h3 {
 	font-size: 2.25rem;
 }
 
-#name {
+#backgroundSection {
 	font-family: 'Abril Fatface', serif;
-	color: #800000; /*dark red*/
+	color: #0A3F7B; /*dark blue*/
 }
 
 .intro {
@@ -92,7 +92,7 @@ h3 {
 	color: #0A3F7B; /*dark blue*/
 }
 
-#project{
+#projectSection{
 	font-family: 'Abril Fatface', 'Crimson Text', 'PT Serif', serif;
 /*	font-weight: 500;*/
 /*	font-size: 2.5rem;*/
@@ -117,7 +117,7 @@ div.chip{
 	letter-spacing: 0.1rem;
 }
 
-#contact{
+#contactSection{
 	font-family: 'Abril Fatface', 'Crimson Text', 'PT Serif', serif;
 	color: #0A3F7B; /*dark blue*/
 	margin: 0;
