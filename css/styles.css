@@ -204,7 +204,7 @@ a:hover { /*mouse over link*/
 }
 
 .btn, .btn:visited, .btn:active, .btn:focus{
-	margin: 0 5px 10px 0;
+	margin: 0 0.5rem 0.75rem 0;
 	font-size: 1.1rem;
 	font-weight: 500;
 	color: #FFF; /*white*/
