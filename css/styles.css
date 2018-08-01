@@ -41,7 +41,17 @@ body {
 	
 	letter-spacing: 0.1rem;
 	text-align: center;
-	color: white;
+	color: #FFF;
+}
+
+.sidenav .user-view .name{
+	font-size: 2rem;
+	color: #FFF;
+}
+
+.sidenav .user-view .email{
+	font-size: 1.25rem;
+	color: #FFF;
 }
 
 .sidenav li>a {
