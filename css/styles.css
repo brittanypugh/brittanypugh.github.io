@@ -66,6 +66,11 @@ body {
 	color: #129DF1; /*light blue*/
 }
 
+.dropdown-content li>a img{
+	display: inline;
+	margin: 0.5rem 0.25rem;
+}
+
 /* Container holding the image and the text */
 .container-img {
     position: relative;
