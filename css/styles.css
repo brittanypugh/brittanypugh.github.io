@@ -17,18 +17,14 @@ body {
 .nav-wrapper{
 	font-family: 'Raleway', serif;
 	letter-spacing: 0.1rem;
-	background-color: #0A3F7B;
-}
-
-.nav-wrapper .brand-logo {
-	width: 20rem;
-	font-family: 'Raleway','Lora', 'PT Serif', serif;
-	text-align: center;
+	background-color: #0A3F7B; /*dark blue*/
 }
 
 .nav-wrapper a{
 	color: #FFF;
 	margin: 0 1rem;
+	font-size: 1.25rem;
+	font-weight: 400;
 }
 
 .nav-wrapper a:hover{
@@ -37,15 +33,27 @@ body {
 }
 
 /* Mobile navbar */
+.nav-wrapper a.brand-logo{
+	width: 20rem;
+	font-family: 'Abril Fatface','Raleway', serif;
+	font-size: 2.5rem;
+	font-weight: 400;
+	
+	letter-spacing: 0.1rem;
+	text-align: center;
+	color: white;
+}
+
 .sidenav li>a {
 	color: #0A3F7B;
 	font-family: 'Raleway','Lora', 'PT Serif', serif;
-	font-size: 1.5rem;
+	font-weight: 400;
+	font-size: 1.25rem;
 	letter-spacing: 0.1rem;
 }
 
 .sidenav li>a:hover {
-	color: #800000;
+	color: #129DF1; /*light blue*/
 }
 
 /* Container holding the image and the text */
