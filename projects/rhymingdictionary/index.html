@@ -24,7 +24,34 @@
 </head>
 
 <body>
-	<h1>Hello World</h1>
+	<div class="row">
+		<div class="col s10 offset-s1 l8 offset-l2">
+			 <h1 id="title">Rhyming Dictionary</h1>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="input-field col s7 offset-s1">
+			<!-- input -->
+			<input placeholder="Enter a word to rhyme with (Ex: driving)" id="item-input" name="item" type="text" class="validate" required aria-required="true">
+			<label for="item-input" class="active">New Word</label>
+		</div>
+					
+		<div class="col s3">
+		<!-- search button -->
+		<button class="btn-large teal waves-effect waves-light" id="add-item" type="submit" name="action">Search</button>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col s10 offset-s1 l8 offset-l2">
+			<div class="section">
+				<p>Search Results: </p>
+				<div id="result"></div>
+			</div>
+		</div>
+	</div>
+	
 </body>
 
 </html>
