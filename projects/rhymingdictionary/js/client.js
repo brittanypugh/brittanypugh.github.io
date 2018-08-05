@@ -29,10 +29,20 @@ function getData(word){
 
 //show word results
 function displayData(data){
-//	$("#results").append(data);
-	for(var i=0; i<data.length; i++){
-		appendData(data[i]);
+	var results = data.length;
+	
+	if(results == 0){
+		appendErrorMessage();
+	}else{
+		for(var i=0; i<data.length; i++){
+			appendData(data[i]);
+		}
 	}
+}
+
+function appendErrorMessage(){
+	var errorMessage = "<p>No results found. Please try another word.</p>"
+	$("#results").append(errorMessage);
 }
 
 function appendData(result){
