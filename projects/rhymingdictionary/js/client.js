@@ -1,8 +1,10 @@
 
 $('#search-button').on('click', function(event) {
 	var word = $('#word-input').val(); //grab input
-	$('#word-input').val(' '); //clear input
-	$("#wordResults tr").remove();
+	$('#word-input').val(''); //clear input
+	$('#wordResults tr').remove(); //clear table rows
+	
+	
 	addCaption(word);
 	getData(word);
 	
@@ -10,14 +12,16 @@ $('#search-button').on('click', function(event) {
 
 //add table caption with user's word
 function addCaption(word){
-	$('#tableCaption').append("Dictionary results for <span id='userWord'>" + word + "</span>");
+	$('#tableCaption').empty();
+	var captionHtml = "Top 15 Dictionary Results for <span id='userWord'>" + word + "</span>";
+	$('#tableCaption').append(captionHtml);
 }
 					  
 //create request and retrieve data
 function getData(word){
 	//grab first 10 word results that rhyme with the user's word
 	//grab pronunciation, definition and frequency of each result
-	var url = "https://api.datamuse.com/words?rel_rhy=" + word + "&md=p,d,f&max=30";
+	var url = "https://api.datamuse.com/words?rel_rhy=" + word + "&md=p,d,f&max=15";
 	
 	$.ajax({
 		method: "GET",
