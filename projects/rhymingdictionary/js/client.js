@@ -1,7 +1,7 @@
 
 $('#search-button').on('click', function(event) {
 	var word = $('#word-input').val();
-	$("#results").empty();
+	$("#wordResults tr").remove();
 	getData(word);
 	
 });
@@ -10,7 +10,7 @@ $('#search-button').on('click', function(event) {
 function getData(word){
 	//grab first 10 word results that rhyme with the user's word
 	//grab pronunciation, definition and frequency of each result
-	var url = "https://api.datamuse.com/words?rel_rhy=" + word + "&md=p,d,f&max=10";
+	var url = "https://api.datamuse.com/words?rel_rhy=" + word + "&md=p,d,f&max=30";
 	
 	$.ajax({
 		method: "GET",
@@ -46,14 +46,20 @@ function appendErrorMessage(){
 }
 
 function appendData(result){
-	var word, numSyllables, partOfSpeech, frequency, frequencyNum, wordHtml;
+	var word, numSyllables, partOfSpeech, frequencyIndex, frequency, wordHtml, tableRowHtml;
+	
 	word = result.word;
 	numSyllables = result.numSyllables;
-	partOfSpeech = result.tags[0];
-	frequency = result.tags[1].split("f:")[1];
-	frequencyNum = "used " + Math.ceil(frequency) + " times per million words of English";
+	if (result.tags[0].indexOf("f:") > -1){
+		partOfSpeech = "n/a";
+	}else{
+		partOfSpeech = result.tags[0];
+	}
 	
-	wordHtml = "<p>" + word + " - " + numSyllables + " syllable(s)" + " " + partOfSpeech + " " + frequencyNum + "</p>";
-	$("#results").append(wordHtml);
+	frequencyIndex = result.tags.length - 1;
+	frequency = Math.ceil(result.tags[frequencyIndex].split("f:")[1]); //grab number
+	
+	tableRowHtml = "<tr><td>" + word + "</td>" + "<td>" + partOfSpeech + "</td>"  + "<td>" + numSyllables + "</td>" + "<td>" + frequency + "</td></tr>";
+	$("#wordResults").append(tableRowHtml);
 	
 }
