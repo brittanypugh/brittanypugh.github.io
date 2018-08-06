@@ -1,10 +1,17 @@
 
 $('#search-button').on('click', function(event) {
-	var word = $('#word-input').val();
+	var word = $('#word-input').val(); //grab input
+	$('#word-input').val(' '); //clear input
 	$("#wordResults tr").remove();
+	addCaption(word);
 	getData(word);
 	
 });
+
+//add table caption with user's word
+function addCaption(word){
+	$('#tableCaption').append("Dictionary results for <span id='userWord'>" + word + "</span>");
+}
 					  
 //create request and retrieve data
 function getData(word){
