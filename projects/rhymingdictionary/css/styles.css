@@ -8,8 +8,8 @@ body{
 }
 
 #search-button{
-	background-color: #C5CAE9;
-	color: black;
+	background-color: #C5CAE9; /*dark lavender*/
+	color: #000; /*black*/
 	letter-spacing: 0.05rem;
 	font-weight: 600;
 }
