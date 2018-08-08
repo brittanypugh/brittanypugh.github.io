@@ -13,7 +13,7 @@ $('#search-button').on('click', function(event) {
 //add table caption with user's word
 function addCaption(word){
 	$('#tableCaption').empty();
-	var captionHtml = "Top 15 Dictionary Results for <span id='userWord'>" + word + "</span>";
+	var captionHtml = "Top Results for <span id='userWord'>" + word + "</span>";
 	$('#tableCaption').append(captionHtml);
 }
 					  
