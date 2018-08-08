@@ -19,7 +19,7 @@ function addCaption(word){
 					  
 //create request and retrieve data
 function getData(word){
-	//grab first 10 word results that rhyme with the user's word
+	//grab first 15 word results that rhyme with the user's word
 	//grab pronunciation, definition and frequency of each result
 	var url = "https://api.datamuse.com/words?rel_rhy=" + word + "&md=p,d,f&max=15";
 	
@@ -34,11 +34,12 @@ function getData(word){
 		},
 		error: function(xhr){
 			console.log("An error occured: "+xhr.status + " " + xhr.statusText);
+			appendErrorMessage();
 		}
 	});
 }
 
-//show word results
+//loop through results and call function to display results
 function displayData(data){
 	var results = data.length;
 	
@@ -51,11 +52,14 @@ function displayData(data){
 	}
 }
 
+//add error message if no data
 function appendErrorMessage(){
-	var errorMessage = "<p>No results found. Please try another word.</p>"
-	$("#results").append(errorMessage);
+	$('#tableCaption').empty();
+	var errorMessage = "<p>No results found. Please try again.</p>";
+	$('#tableCaption').append(errorMessage);
 }
 
+//add results to table
 function appendData(result){
 	var word, numSyllables, partOfSpeech, frequencyIndex, frequency, wordHtml, tableRowHtml;
 	
