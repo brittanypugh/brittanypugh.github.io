@@ -1,0 +1,52 @@
+body{
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12px;
+}
+
+#title{
+	font-size: 3rem;
+}
+
+#search-button{
+	background-color: #C5CAE9;
+	color: black;
+	letter-spacing: 0.05rem;
+	font-weight: 600;
+}
+
+#tableCaption{
+	font-size: 1.75rem;
+}
+
+#userWord{
+	font-weight: 700;
+ 	text-transform: uppercase;
+}
+
+table#wordTable tr{
+	letter-spacing: 0.1rem;
+	font-size: 1.25rem;
+}
+
+table#wordTable thead tr{
+	background-color: #D3D3E8; /*dark lavender*/
+}
+
+#wordResults tr:nth-child(odd){
+	background-color: #F1F1F8; /*light lavender*/
+}
+
+#wordResults tr:nth-child(even){
+	background-color: #FFF; /*white*/
+}
+
+#wordResults tr:hover{
+	color: #5D1D92; /*purple*/
+	font-weight: 700;
+	font-size: 1.5rem;
+}
+
+table#wordTable tfoot tr{
+	background-color: #D3D3E8;
+	font-size: 1rem;
+}
