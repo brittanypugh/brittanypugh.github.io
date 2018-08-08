@@ -39,7 +39,7 @@ body {
 	font-size: 2.5rem;
 	font-weight: 400;
 	
-	letter-spacing: 0.1rem;
+	letter-spacing: 0.2rem;
 	text-align: center;
 	color: #FFF; /*white*/
 }
@@ -84,7 +84,6 @@ body {
 /* Container holding the image and the text */
 .container-img {
     position: relative;
-
 }
 
 /*Center text over the image*/
@@ -118,26 +117,6 @@ h3 {
 	color: #0A3F7B; /*dark blue*/
 }
 
-.number{
-	font-family:'Abril Fatface', 'PT Serif', serif;
-	font-size: 3rem;
-	font-weight: 500;
-	padding-left: 2rem;
-	color: #0A3F7B; /*dark blue*/
-	
-}
-
-.blank{
-/*	font-family: 'Shadows Into Light', cursive;*/
-/*	font-family: 'Satisfy', cursive;*/
-/*	font-family: 'Courgette', cursive;*/
-/*	font-family: 'Caveat', cursive;*/
-	font-family: 'Merienda', cursive;
-/*	font-family: 'Architects Daughter', cursive;*/
-	font-weight: 600;
-	text-decoration-line: underline;
-}
-
 .intro {
 	font-family: 'Lora', 'PT Serif', serif;
 	font-size: 1.75rem;
@@ -147,8 +126,6 @@ h3 {
 
 #projectSection{
 	font-family: 'Abril Fatface', 'Crimson Text', 'PT Serif', serif;
-/*	font-weight: 500;*/
-/*	font-size: 2.5rem;*/
 	color: #0A3F7B; /*dark blue*/
 	margin: 0;
 }
@@ -162,9 +139,10 @@ h3 {
 }
 
 div.chip{
+	display: inline-block;
 	font-weight: 700;
-	margin: 0.25rem 0.1rem;
-	float: right;
+	margin: 0.5rem 0.3rem;
+	float: left;
 	height: 2rem;
 	letter-spacing: 0.1rem;
 }
@@ -174,18 +152,6 @@ div.chip{
 	color: #0A3F7B; /*dark blue*/
 	margin: 0;
 	padding-left: 0.5rem;
-}
-
-
-.icon{
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-.contact{
-	font-size: 1.5rem;
-	text-align: center;
 }
 
 hr {
@@ -198,7 +164,6 @@ p {
 	text-justify: inter-character;
 	font-size: 1.5rem;
 	line-height: 2.5rem;
-	
 }
 
 a { /*link*/
