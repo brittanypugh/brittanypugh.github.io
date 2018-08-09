@@ -4,7 +4,20 @@ body{
 }
 
 #title{
-	font-size: 3rem;
+	font-family: 'Libre Franklin', sans-serif;
+	font-size: 4rem;
+}
+
+label[for="word-input"]{
+	letter-spacing: 0.1rem;
+	font-size: 1.25rem;
+	font-weight: 600;
+	color: #5D1D92; /*purple*/
+}
+
+#word-input{
+	font-size: 1.5rem;
+	font-weight: 600;
 }
 
 #search-button{
@@ -23,6 +36,10 @@ body{
  	text-transform: uppercase;
 }
 
+table{
+	border: 0.15rem solid #F1F1F8; /*gray*/
+}
+
 table#wordTable tr{
 	letter-spacing: 0.1rem;
 	font-size: 1.25rem;
@@ -33,7 +50,7 @@ table#wordTable thead tr{
 }
 
 #wordResults tr:nth-child(odd){
-	background-color: #F1F1F8; /*light lavender*/
+	background-color: #F1F1F8; /*gray*/
 }
 
 #wordResults tr:nth-child(even){
