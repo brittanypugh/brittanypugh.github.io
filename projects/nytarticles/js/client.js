@@ -23,13 +23,13 @@ function getData(){
 
 //loop through results and call function to display results
 function displayData(data){
-	var results = data.length;
+	var results = data.results.length;
 	
 	if(results == 0){
 		appendErrorMessage();
 	}else{
-		for(var i=0; i<data.length; i++){
-			appendData(data[i]);
+		for(var i=0; i<results; i++){
+			appendData(data.results[i]);
 		}
 	}
 }
@@ -55,9 +55,9 @@ function appendData(result){
 	publishedDate = result.published_date;
 	rankTotalShares = result.total_shares;
 	
-	thumbnail = result.media[0].media-metadata[0].url;
-	thumbnailHeight = result.media[0].media-metadata[0].height;
-	thumbnailWidth = result.media[0].media-metadata[0].width;
+	thumbnail = result.media[0]["media-metadata"][0].url;
+	thumbnailHeight = result.media[0]["media-metadata"][0].height;
+	thumbnailWidth = result.media[0]["media-metadata"][0].width;
 	
 	cardHtml =  "<div class='row'><div class='col s12 m7'><div class='card'><div class='card-image'><img src=" + thumbnail + "><span class='card-title'>" + title + "</span></div><div class='card-content'><p>" + author + "</p><p>" + publishedDate + "</p><p>" + abstract + "</p></div><div class='card-action'><a href=" + url + ">View Article</a></div></div></div></div>";
 	
