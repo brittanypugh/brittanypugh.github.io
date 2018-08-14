@@ -4,7 +4,7 @@ getData();
 //create request and retrieve data
 function getData(){
 	//grab most shared articles in Magazine category from last 30 days
-	var url = "https://api.nytimes.com/svc/mostpopular/v2/mostshared/Opinion/30.json";
+	var url = "https://api.nytimes.com/svc/mostpopular/v2/mostshared/Technology/30.json";
 	url += '?' + $.param({
 	  'api-key': myKey
 	});
@@ -44,7 +44,7 @@ function appendErrorMessage(){
 //organize data with cards and add cards to page
 function appendData(result){
 	var url, author, title, abstract, publishedDate, rankTotalShares;
-	var thumbnail, thumbnailHeight, thumbnailWidth;
+	var thumbnail, thumbnailHeight, thumbnailWidth, thumbnailCaption;
 	var cardHtml;
 	
 	url = result.url;
@@ -55,11 +55,12 @@ function appendData(result){
 	publishedDate = result.published_date;
 	rankTotalShares = result.total_shares;
 	
-	thumbnail = result.media[0]["media-metadata"][0].url;
-	thumbnailHeight = result.media[0]["media-metadata"][0].height;
-	thumbnailWidth = result.media[0]["media-metadata"][0].width;
+	thumbnail = result.media[0]["media-metadata"][1].url;
+	thumbnailHeight = result.media[0]["media-metadata"][1].height;
+	thumbnailWidth = result.media[0]["media-metadata"][1].width;
+	thumbnailCaption = result.media[0]["caption"];
 	
-	cardHtml =  "<div class='row'><div class='col s12 m7'><div class='card'><div class='card-image'><img src=" + thumbnail + "><span class='card-title'>" + title + "</span></div><div class='card-content'><p>" + author + "</p><p>" + publishedDate + "</p><p>" + abstract + "</p></div><div class='card-action'><a href=" + url + ">View Article</a></div></div></div></div>";
+	cardHtml = "<div class='row'><div class='col s12 m5 offset-m1'><div class='card'><div class='card-image waves-effect waves-block waves-light'><img class='activator' src=" + thumbnail + " alt=" + thumbnailCaption + "></div><div class='card-content'><span class='card-title activator grey-text text-darken-4'>" + title + "<i class='material-icons right'>more_vert</i></span><p><a href=" + url + ">View Article</a></p></div><div class='card-reveal'><span class='card-title grey-text text-darken-4'>" + title + "<i class='material-icons right'>close</i></span><p>" + abstract + "</p></div></div></div></div>";
 	
 	$("#cards").append(cardHtml);
 	
