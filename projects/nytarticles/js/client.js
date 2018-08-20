@@ -23,13 +23,32 @@ function getData(){
 
 //loop through results and call function to display results
 function displayData(data){
-	var results = data.results.length;
+	var dataLength = data.results.length;
+	var evenRowHtml, oddRowHtml, rowId, colId;
+	var rowHtml, colHtml;
 	
-	if(results == 0){
+	if(dataLength == 0){
 		appendErrorMessage();
 	}else{
-		for(var i=0; i<results; i++){
-			appendData(data.results[i]);
+		for(var i=0; i<dataLength; i++){ 
+			rowId = "row" + Math.floor((i/2) + 1); //ex: row1, row2,...
+			colId = "col" + (i+1); //ex: col1, col2,...
+			
+			if((i%2) == 0){ //even cards
+				rowHtml = "<div class='row' id='" + rowId +"'></div>";
+				colHtml = "<div class='col s12 m4 offset-m2' id='"+ colId + "'></div>";
+				$('#mainDiv').append(rowHtml);
+				$('#'+rowId).append(colHtml);
+				
+				appendData(data.results[i], colId);
+				
+			}else{ //odd cards
+
+				colHtml = "<div class='col s12 m4 offset-m1' id='"+ colId + "'></div>";
+				$('#'+rowId).append(colHtml);
+				
+				appendData(data.results[i], colId)
+			}
 		}
 	}
 }
@@ -42,7 +61,7 @@ function appendErrorMessage(){
 }
 
 //organize data with cards and add cards to page
-function appendData(result){
+function appendData(result, colId){
 	var url, author, title, abstract, publishedDate, rankTotalShares;
 	var thumbnail, thumbnailHeight, thumbnailWidth, thumbnailCaption;
 	var cardHtml;
@@ -55,13 +74,13 @@ function appendData(result){
 	publishedDate = result.published_date;
 	rankTotalShares = result.total_shares;
 	
-	thumbnail = result.media[0]["media-metadata"][1].url;
-	thumbnailHeight = result.media[0]["media-metadata"][1].height;
-	thumbnailWidth = result.media[0]["media-metadata"][1].width;
+	thumbnail = result.media[0]["media-metadata"][2].url;
+	thumbnailHeight = result.media[0]["media-metadata"][2].height;
+	thumbnailWidth = result.media[0]["media-metadata"][2].width;
 	thumbnailCaption = result.media[0]["caption"];
 	
-	cardHtml = "<div class='row'><div class='col s12 m5 offset-m1'><div class='card'><div class='card-image waves-effect waves-block waves-light'><img class='activator' src=" + thumbnail + " alt=" + thumbnailCaption + "></div><div class='card-content'><span class='card-title activator grey-text text-darken-4'>" + title + "<i class='material-icons right'>more_vert</i></span><p><a href=" + url + ">View Article</a></p></div><div class='card-reveal'><span class='card-title grey-text text-darken-4'>" + title + "<i class='material-icons right'>close</i></span><p>" + abstract + "</p></div></div></div></div>";
+	cardHtml = "<div class='card'><div class='card-image waves-effect waves-block waves-light'><img class='activator' src=" + thumbnail + " alt=" + thumbnailCaption + "></div><div class='card-content'><span class='card-title activator grey-text text-darken-4'>" + title + "<i class='material-icons right'>more_vert</i></span><p><a href=" + url + ">View Article</a></p></div><div class='card-reveal'><span class='card-title grey-text text-darken-4'>" + title + "<i class='material-icons right'>close</i></span><p>" + abstract + "</p></div></div>";
 	
-	$("#cards").append(cardHtml);
+	$("#" + colId).append(cardHtml);
 	
 }
