@@ -4,7 +4,7 @@ getData();
 //create request and retrieve data
 function getData(){
 	//grab most shared articles in Magazine category from last 30 days
-	var url = "https://api.nytimes.com/svc/mostpopular/v2/mostshared/Technology/30.json";
+	var url = "https://api.nytimes.com/svc/mostpopular/v2/mostshared/Technology/1.json";
 	url += '?' + $.param({
 	  'api-key': myKey
 	});
@@ -79,7 +79,7 @@ function appendData(result, colId){
 	thumbnailWidth = result.media[0]["media-metadata"][2].width;
 	thumbnailCaption = result.media[0]["caption"];
 	
-	cardHtml = "<div class='card'><div class='card-image waves-effect waves-block waves-light'><img class='activator' src=" + thumbnail + " alt=" + thumbnailCaption + "></div><div class='card-content'><span class='card-title activator grey-text text-darken-4'>" + title + "<i class='material-icons right'>more_vert</i></span><p><a href=" + url + ">View Article</a></p></div><div class='card-reveal'><span class='card-title grey-text text-darken-4'>" + title + "<i class='material-icons right'>close</i></span><p>" + abstract + "</p></div></div>";
+	cardHtml = "<div class='card medium'><div class='card-image waves-effect waves-block waves-light'><img class='activator' src=" + thumbnail + " alt=" + thumbnailCaption + "></div><div class='card-content'><span class='card-title activator grey-text text-darken-4'>" + title + "<i class='material-icons right'>more_vert</i></span><p><a href=" + url + ">View Article</a></p></div><div class='card-reveal'><span class='card-title grey-text text-darken-4'>" + title + "<i class='material-icons right'>close</i></span><p>" + abstract + "</p></div></div>";
 	
 	$("#" + colId).append(cardHtml);
 	
