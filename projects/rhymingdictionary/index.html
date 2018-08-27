@@ -12,8 +12,8 @@
 	<!--CSS and Styles-->
 	<!-- Compiled and minified CSS -->
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
-	<link rel="stylesheet" href="css/styles.css">
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="css/styles.css">
 
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Libre+Franklin" rel="stylesheet">
@@ -28,16 +28,22 @@
 	</div>
 
 	<div class="row">
-		<div class="input-field col s7 offset-s1 l7 offset-l2">
-			<!-- input -->
-			<input placeholder="Ex: retrograde" id="word-input" name="search" type="text" class="validate " required aria-required="true">
-			<label for="word-input" class="active">New Word</label>
-		</div>
+		<form class="col s12" id="form">
+			<div class="row">
+				
+				<div class="input-field col s7 offset-s1 l7 offset-l2">
+					<!-- input -->
+					<input placeholder="Ex: retrograde" id="word-input" name="search" type="text" class="validate" required aria-required="true">
+					<label for="word-input" class="active">New Word</label>
+				</div>
 
-		<div class="col s3 l3">
-			<!-- search button -->
-			<button class="btn-large waves-effect waves-light" id="search-button" type="submit" name="action">Search</button>
-		</div>
+				<div class="col s3 l3">
+					<!-- search button -->
+					<button class="btn-large waves-effect waves-light" id="search-button" type="submit" name="action">Search</button>
+				</div>
+
+			</div>
+		</form>
 	</div>
 
 	<div class="row">
@@ -46,12 +52,12 @@
 				<table id="wordTable" class="centered">
 					<caption id="tableCaption"></caption>
 					<thead>
-					<tr>
-						<th>Word</th>
-						<th>Part of Speech</th>
-						<th>Number of Syllables</th>
-						<th>Frequency of Use*</th>
-					</tr>
+						<tr>
+							<th>Word</th>
+							<th>Part of Speech</th>
+							<th>Number of Syllables</th>
+							<th>Frequency of Use*</th>
+						</tr>
 					</thead>
 					<tbody id="wordResults"></tbody>
 					<tfoot>
@@ -64,10 +70,10 @@
 		</div>
 	</div>
 
-
 	<!-- JavaScript & JQuery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="js/client.js"></script>
+
 </body>
 
 </html>
