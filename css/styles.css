@@ -86,20 +86,6 @@ body {
     position: relative;
 }
 
-/*Center text over the image*/
-.centered{
-	text-align: center;
-    color: white;
-	font-family: 'Lora', 'PT Serif', serif;
-	font-size: 1.75rem;
-	width: 100%;
-	
-	position: absolute;
-	top: 90%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-}
-
 h1 {
 	font-size: 4.5rem;
 }
