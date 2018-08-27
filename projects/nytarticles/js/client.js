@@ -31,20 +31,19 @@ function displayData(data){
 		appendErrorMessage();
 	}else{
 		for(var i=0; i<dataLength; i++){ 
-			rowId = "row" + Math.floor((i/2) + 1); //ex: row1, row2,...
+			rowId = "row" + Math.floor((i/3) + 1); //ex: row1, row2,...
 			colId = "col" + (i+1); //ex: col1, col2,...
 			
-			if((i%2) == 0){ //even cards
+			if((i%3) == 0){ //first card of the row
 				rowHtml = "<div class='row' id='" + rowId +"'></div>";
-				colHtml = "<div class='col s12 m4 offset-m2' id='"+ colId + "'></div>";
+				colHtml = "<div class='col s12 l4' id='"+ colId + "'></div>";
 				$('#mainDiv').append(rowHtml);
 				$('#'+rowId).append(colHtml);
 				
 				appendData(data.results[i], colId);
 				
-			}else{ //odd cards
-
-				colHtml = "<div class='col s12 m4 offset-m1' id='"+ colId + "'></div>";
+			}else{ //rest of cards in the row
+				colHtml = "<div class='col s12 l4' id='"+ colId + "'></div>";
 				$('#'+rowId).append(colHtml);
 				
 				appendData(data.results[i], colId)
