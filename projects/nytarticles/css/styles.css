@@ -3,3 +3,26 @@ div.card.medium:hover{
 	border-width: 2px;
 	border-color: darkmagenta;
 }
+
+div.card-reveal{
+	position: relative;
+}
+
+i.material-icons.right.close{
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	
+	margin-left: 5px;
+	margin-bottom: 5px;
+
+}
+
+.card.card-reveal.card-title {
+	margin-bottom: 20px;
+	margin-right: 25px;
+}
+
+
+
+
