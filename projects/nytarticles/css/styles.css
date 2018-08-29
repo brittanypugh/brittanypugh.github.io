@@ -13,14 +13,13 @@ i.material-icons.right.close{
 	top: 20px;
 	right: 20px;
 	
-	margin-left: 5px;
+	margin-left: 20px;
 	margin-bottom: 5px;
-
 }
 
-.card.card-reveal.card-title {
+.card .card-reveal .card-title {
 	margin-bottom: 20px;
-	margin-right: 25px;
+	margin-right: 20px;
 }
 
 
