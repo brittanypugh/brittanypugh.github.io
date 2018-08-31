@@ -12,7 +12,6 @@ div.card .card-content .card-title{
 	font-size: 1.5rem;
 }
 
-
 a{
 	font-size: 1.25rem;
 }
@@ -33,6 +32,11 @@ i.material-icons.right.close{
 	top: 1rem;
 	right: 1rem;
 	
+	margin-left: 1rem;
+	margin-bottom: 0.25rem;
+}
+
+i.material-icons.right.vert-expand{
 	margin-left: 1rem;
 	margin-bottom: 0.25rem;
 }
