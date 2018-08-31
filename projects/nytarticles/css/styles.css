@@ -1,10 +1,11 @@
 html, body{
-	font-family: 'Barlow Semi Condensed', sans-serif;
-	font-family: 'Sansita', sans-serif;
 	font-family: 'Cairo', sans-serif;
-/*	font-family: 'Heebo', sans-serif;*/
-	
 	font-size: 16px;
+}
+
+h1{
+	font-size: 3rem;
+	text-align: center;
 }
 
 div.card.large:hover{
@@ -33,11 +34,11 @@ i.material-icons.right.close{
 }
 
 .card .card-content a{
-	font-family: 'Cairo', sans-serif;
+/*	font-family: 'Cairo', sans-serif;*/
 }
 
 .card .card-content .card-title{
-	font-family: 'Sansita', sans-serif;
+/*	font-family: 'Sansita', sans-serif;*/
 }
 
 
