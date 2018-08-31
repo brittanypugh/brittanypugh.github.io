@@ -1,6 +1,16 @@
-div.card.medium:hover{
+html, body{
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-family: 'Sansita', sans-serif;
+	font-family: 'Cairo', sans-serif;
+/*	font-family: 'Heebo', sans-serif;*/
+	
+	font-size: 16px;
+}
+
+div.card.large:hover{
 	border-style: solid;
-	border-width: 2px;
+	border-width: 5px;
+	border-radius: 1%;
 	border-color: darkmagenta;
 }
 
@@ -20,6 +30,14 @@ i.material-icons.right.close{
 .card .card-reveal .card-title {
 	margin-bottom: 20px;
 	margin-right: 20px;
+}
+
+.card .card-content a{
+	font-family: 'Cairo', sans-serif;
+}
+
+.card .card-content .card-title{
+	font-family: 'Sansita', sans-serif;
 }
 
 
